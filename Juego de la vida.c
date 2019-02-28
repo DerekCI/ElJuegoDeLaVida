@@ -8,10 +8,7 @@ void imprimeMatriz(int** matriz, int filas, int columnas);
 
 int main(){
 	int **matriz = generarMatrizAleatoria(5, 5);
-	
-	mostrarMatriz(matriz, 5, 5);
-	
-	return 0;
+	imprimeMatriz(matriz, 5, 5);
 		
 }
 
