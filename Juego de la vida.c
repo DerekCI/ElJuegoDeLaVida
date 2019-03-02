@@ -5,6 +5,7 @@
 
 int pideMatriz(int filas, int columnas);
 void imprimeMatriz(int** matriz, int filas, int columnas);
+int vecinasVivas(int** matriz, int, int);
 
 
 int main(){
@@ -52,4 +53,22 @@ void imprimeMatriz(int** matriz, int filas, int columnas){
 		}
 		printf("\n");
 	}
+}
+
+int vecinasVivas(int **matriz, int filas, int columnas)
+{
+    int total = 0;
+	int i,j;
+            for(i = filas - 1; i <= filas + 1; i++)
+            {
+                for(j = columnas - 1; j <= columnas + 1; j++)
+                {
+                    if (i >= 0 && j >= 0 && i < filas && j < columnas)
+                    {
+                        total += matriz[i][j];
+                    }
+                }
+            }
+
+            return total - matriz[filas][columnas];
 }
