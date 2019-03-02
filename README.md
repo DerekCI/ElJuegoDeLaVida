@@ -1,3 +1,4 @@
 # ElJuegoDeLaVida
 Proyecto 1 de C Generacion 38 PROTECO
-hola
+Cortez Ibarra Derek           Prebe 5
+Duran Lopez Francisco Javier  Prebe 1
